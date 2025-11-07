@@ -6,22 +6,22 @@ This lab focused on analyzing the structure of raw email headers to trace messag
 ---
 
 ### 📥 Inspecting the Raw Email
-![Screenshot 1 – Sample email headers](./screenshots/header-sample.png)  
+![Screenshot 1 – Sample email headers](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1Sample1.png)  
 Opened the sample email file to view its full headers and message body.
 
-![Screenshot 2 – View in terminal](./screenshots/email-terminal.png)  
+![Screenshot 2 – View in terminal](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS2.png)  
 Displayed the email in the terminal using the `cat` command to see the underlying HTML markup that composes the body.
 
-![Screenshot 3 – Locate specific header fields](./screenshots/grep-from.png)  
+![Screenshot 3 – Locate specific header fields](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS3.png)  
 Used the `grep` command to extract the **From** header directly from the raw file.
 
-![Screenshot 4 – Open in Sublime Text](./screenshots/sublime-view.png)  
+![Screenshot 4 – Open in Sublime Text](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS4.png)  
 Opened the same file in Sublime Text (`subl` command) for easier reading and annotation.
 
 ---
 
 ### 🧩 Understanding Important Header Fields
-![Screenshot 5 – Annotated header fields](./screenshots/header-details.png)
+![Screenshot 5 – Annotated header fields](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS5.png)
 
 | Header | Description / Use |
 |--------|-------------------|
@@ -39,16 +39,16 @@ Opened the same file in Sublime Text (`subl` command) for easier reading and ann
 ---
 
 ### 🌍 Tracing Sender and Infrastructure
-![Screenshot 6 – WHOIS lookup on IP](./screenshots/whois-terminal.png)  
+![Screenshot 6 – WHOIS lookup on IP](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS6.png)  
 Ran the `whois` command on the IP address from the final **Received** header to identify the owning network.
 
-![Screenshot 7 – WHOIS DomainTools search](./screenshots/whois-domaintools.png)  
+![Screenshot 7 – WHOIS DomainTools search](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS7.png)  
 Verified the same IP on **whois.domaintools.com** for registrar and organization details.
 
-![Screenshot 8 – Header parsed via Microsoft Header Analyzer](./screenshots/mha-parser.png)  
+![Screenshot 8 – Header parsed via Microsoft Header Analyzer](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS8.png)  
 Parsed headers through **[Microsoft Header Analyzer](https://mha.azurewebsites.net/)** for automated breakdown and visualization.
 
-![Screenshot 9 – MXToolbox Header Analyzer](./screenshots/mxtoolbox-parser.png)  
+![Screenshot 9 – MXToolbox Header Analyzer](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS9.png)  
 Cross-checked results with **[MXToolbox Header Analyzer](https://mxtoolbox.com/EmailHeaders.aspx)** to confirm routing paths and delays.
 
 ---
