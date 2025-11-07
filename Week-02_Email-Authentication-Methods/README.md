@@ -52,12 +52,12 @@ Below is the breakdown of my hands-on analysis and what I observed at each step.
 ![Screenshot 3 – Email opened in Sublime Text](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/051ea1c2d252a0baef73ddd27fb5d829b99d9482/Week-02_Email-Authentication-Methods/Week-02_Email-Authentication-Methods/screenshots/Lab2SS3.png)  
 **Screenshot 3** – Viewed raw headers in Sublime.  
 - The **Received** header shows when and where the message was handed off.  
-- The boxed IP can’t be spoofed because it reflects a real TCP connection between mail servers.  
+- The boxed IP address can’t be spoofed because it reflects a real TCP connection between mail servers.  
 
 ---
 
 ![Screenshot 4 – WHOIS lookup](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/051ea1c2d252a0baef73ddd27fb5d829b99d9482/Week-02_Email-Authentication-Methods/Week-02_Email-Authentication-Methods/screenshots/Lab2SS4.png)  
-**Screenshot 4** – Used DomainTools WHOIS on IP `149.72.142.11`.  
+**Screenshot 4** – Used DomainTools WHOIS on IP address `149.72.142.11`.  
 - **SENDGRID** → legitimate marketing platform (commonly abused).  
 - **namecheap.com** → appears in reverse DNS (translates an IP address back into a domain name) results.
 
@@ -75,8 +75,8 @@ Below is the breakdown of my hands-on analysis and what I observed at each step.
 
 ![Screenshot 7 – SPF record for SendGrid](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/051ea1c2d252a0baef73ddd27fb5d829b99d9482/Week-02_Email-Authentication-Methods/Week-02_Email-Authentication-Methods/screenshots/Lab2SS7.png)  
 **Screenshot 7** – Queried **sendgrid.net** using `dig`.  
-- Found authorized IP range: `149.72.0.0/16`.  
-- The sender IP `149.72.142.11` falls within this range → SPF **passed**.
+- Found authorized IP address range: `149.72.0.0/16`. This is a cider block containing all of the IP addresses in the range of `149.72.0.0 - 149.72.255.255`.   
+- The sender IP address `149.72.142.11` falls within this range → SPF **passed**.
 
 ---
 
@@ -127,12 +127,12 @@ Below is the breakdown of my hands-on analysis and what I observed at each step.
 
 ## 🧭 Notes / Takeaways
 - The analyzed message was **legitimate**.  
-- Passing SPF/DKIM/DMARC doesn’t mean an email is safe — it just confirms it passed technical checks.  
+- Passing SPF/DKIM/DMARC doesn’t mean an email is safe, it just confirms it passed technical checks.  
 - Attackers can still:
   - Register look-alike domains that pass authentication.
   - Abuse legitimate services (like Google or SendGrid) to deliver phishing emails.  
 - Always verify:
-  - Sending domain and IP via WHOIS and reverse DNS.
+  - Sending domain and IP address via WHOIS and reverse DNS.
   - The **context** and **content** of the email itself.  
 - Some legitimate emails might fail checks due to bad configurations.
 
@@ -141,6 +141,6 @@ Below is the breakdown of my hands-on analysis and what I observed at each step.
 ## 🧾 Summary of Email Authentication
 | Protocol | Purpose | What It Does | Analogy |
 |-----------|----------|---------------|----------|
-| **SPF** | Defines which servers can send email for a domain | Lists authorized IPs in DNS | “Approved sender list” |
+| **SPF** | Defines which servers can send email for a domain | Lists authorized IP addresses in DNS | “Approved sender list” |
 | **DKIM** | Verifies message integrity and authenticity | Uses cryptographic signature | “Tamper-evident seal on an envelope” |
 | **DMARC** | Aligns SPF/DKIM results and defines failure actions | Adds reporting and enforcement | “Instructions for what to do if the sender or seal looks wrong” |
