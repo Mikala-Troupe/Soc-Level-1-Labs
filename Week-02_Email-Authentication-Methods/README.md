@@ -106,6 +106,7 @@ Below is the breakdown of my hands-on analysis and what I observed at each step.
 
 ![Screenshot 10 – nslookup DKIM record](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/051ea1c2d252a0baef73ddd27fb5d829b99d9482/Week-02_Email-Authentication-Methods/Week-02_Email-Authentication-Methods/screenshots/Lab2SS10.png)  
 **Screenshot 10** – Verified DKIM public key via `nslookup` for `s1._domainkey.namecheap.com`.
+- Canonical Name (CNAME) - A type of DNS record that maps an alias name to a true or canonical domain name.
 
 ---
 
