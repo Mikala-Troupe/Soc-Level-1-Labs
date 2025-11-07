@@ -62,11 +62,9 @@ Cross-checked results with **[MXToolbox Header Analyzer](https://mxtoolbox.com/E
 
 ---
 
-## 📚 Resources
+## 📚 Resources and Tools
 - [Email Header Package for Sublime Text](https://packagecontrol.io/packages/Email%20Header)  
-- [13Cubed Email Header Repo](https://github.com/13Cubed/EmailHeader)  
-- [IANA Message Header Registry](https://www.iana.org/assignments/message-headers/message-headers.xhtml)  
+- [13Cubed Email Header Repo](https://github.com/13Cubed/EmailHeader)    
 - [WHOIS DomainTools](https://whois.domaintools.com/)  
-- [Microsoft Header Analyzer](https://mha.azurewebsites.net/)  
-- [Microsoft MHA GitHub Repo](https://github.com/microsoft/MHA)  
+- [Microsoft Header Analyzer](https://mha.azurewebsites.net/)   
 - [MXToolbox Header Analyzer](https://mxtoolbox.com/EmailHeaders.aspx)
