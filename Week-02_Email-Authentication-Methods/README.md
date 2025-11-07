@@ -59,7 +59,7 @@ Below is the breakdown of my hands-on analysis and what I observed at each step.
 ![Screenshot 4 – WHOIS lookup](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/051ea1c2d252a0baef73ddd27fb5d829b99d9482/Week-02_Email-Authentication-Methods/Week-02_Email-Authentication-Methods/screenshots/Lab2SS4.png)  
 **Screenshot 4** – Used DomainTools WHOIS on IP `149.72.142.11`.  
 - **SENDGRID** → legitimate marketing platform (commonly abused).  
-- **namecheap.com** → appears in reverse DNS results.
+- **namecheap.com** → appears in reverse DNS (translates an IP address back into a domain name) results.
 
 ---
 
