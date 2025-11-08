@@ -8,7 +8,7 @@ This week I practiced analyzing the **email body and content** to identify phish
 ## Email Content Review
 
 ### MIME + HTML Inspection
-![Screenshot 1 – Original phishing email](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0ec9598347adeb6edb70a80c27ccdfb8587e3eeb/Week-03_Email-Content-Analysis/Week-03_Email-Content-Analysis/screenshots/Lab3SS1.png))  
+![Screenshot 1 – Original phishing email](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0ec9598347adeb6edb70a80c27ccdfb8587e3eeb/Week-03_Email-Content-Analysis/Week-03_Email-Content-Analysis/screenshots/Lab3SS1.png)  
 **Screenshot 1** — Initial phishing email view.
 
 ![Screenshot 2 – Headers / MIME structure](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0ec9598347adeb6edb70a80c27ccdfb8587e3eeb/Week-03_Email-Content-Analysis/Week-03_Email-Content-Analysis/screenshots/Lab3SS2.png)  
