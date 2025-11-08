@@ -5,23 +5,32 @@ This lab focused on analyzing the structure of raw email headers to trace messag
 
 ---
 
-### 📥 Inspecting the Raw Email
+### Inspecting the Raw Email
 ![Screenshot 1 – Sample email headers](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1Sample1.png)  
+**Screenshot 1**
+
 Opened the sample email file to view its full headers and message body.
 
 ![Screenshot 2 – View in terminal](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS2.png)  
+**Screenshot 2**
+
 Displayed the email in the terminal using the `cat` command to see the underlying HTML markup that composes the body.
 
 ![Screenshot 3 – Locate specific header fields](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS3.png)  
+**Screenshot 3**
+
 Used the `grep` command to extract the **From** header directly from the raw file.
 
 ![Screenshot 4 – Open in Sublime Text](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS4.png)  
+**Screenshot 4**
+
 Opened the same file in Sublime Text (`subl` command) for easier reading and annotation.
 
 ---
 
-### 🧩 Understanding Important Header Fields
+### Understanding Important Header Fields
 ![Screenshot 5 – Annotated header fields](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS5.png)
+**Screenshot 5**
 
 | Header | Description / Use |
 |--------|-------------------|
@@ -38,22 +47,30 @@ Opened the same file in Sublime Text (`subl` command) for easier reading and ann
 
 ---
 
-### 🌍 Tracing Sender and Infrastructure
+### Tracing Sender and Infrastructure
 ![Screenshot 6 – WHOIS lookup on IP](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS6.png)  
+**Screenshot 6**
+
 Ran the `whois` command on the IP address from the final **Received** header to identify the owning network.
 
 ![Screenshot 7 – WHOIS DomainTools search](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS7.png)  
+**Screenshot 7**
+
 Verified the same IP on **whois.domaintools.com** for registrar and organization details.
 
 ![Screenshot 8 – Header parsed via Microsoft Header Analyzer](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS8.png)  
+**Screenshot 8**
+
 Parsed headers through **[Microsoft Header Analyzer](https://mha.azurewebsites.net/)** for automated breakdown and visualization.
 
 ![Screenshot 9 – MXToolbox Header Analyzer](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS9.png)  
+**Screenshot 9**
+
 Cross-checked results with **[MXToolbox Header Analyzer](https://mxtoolbox.com/EmailHeaders.aspx)** to confirm routing paths and delays.
 
 ---
 
-## 🧭 Lessons Learned
+## Lessons Learned
 - Reading raw headers reveals the true sender path and bypasses deceptive display names.  
 - The **Message-ID**, **Return-Path**, and **Received** chain are critical for verifying legitimacy.  
 - Always compare **From**, **Reply-To**, and **Return-Path** for mismatched domains.  
@@ -62,7 +79,7 @@ Cross-checked results with **[MXToolbox Header Analyzer](https://mxtoolbox.com/E
 
 ---
 
-## 📚 Resources and Tools
+## Resources and Tools
 - [Email Header Package for Sublime Text](https://packagecontrol.io/packages/Email%20Header)  
 - [13Cubed Email Header Repo](https://github.com/13Cubed/EmailHeader)    
 - [WHOIS DomainTools](https://whois.domaintools.com/)  
