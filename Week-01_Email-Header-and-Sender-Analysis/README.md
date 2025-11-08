@@ -1,11 +1,11 @@
-# Week 1 — Email Header and Sender Analysis 📨
+# Week 1 — Email Header and Sender Analysis Notes
 
 ## Objective
 This lab focused on analyzing the structure of raw email headers to trace message origin, verify sender authenticity, and identify potential signs of spoofing or compromise.
 
 ---
 
-### Inspecting the Raw Email
+### 📌 Inspecting the Raw Email
 ![Screenshot 1 – Sample email headers](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1Sample1.png)  
 **Screenshot 1**
 
@@ -28,7 +28,7 @@ This lab focused on analyzing the structure of raw email headers to trace messag
 
 ---
 
-### Understanding Important Header Fields
+### 📌 Understanding Important Header Fields
 ![Screenshot 5 – Annotated header fields](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS5.png)
 **Screenshot 5**
 
@@ -47,7 +47,7 @@ This lab focused on analyzing the structure of raw email headers to trace messag
 
 ---
 
-### Tracing Sender and Infrastructure
+### 📌 Tracing Sender and Infrastructure
 ![Screenshot 6 – WHOIS lookup on IP](https://github.com/Mikala-Troupe/soc-level-1-labs/blob/8b6ec7e5bf6a90d6e7a6a4d1d73eca3d70fd6425/Week-01_Email-Header-and-Sender-Analysis/screenshots/Lab1SS6.png)  
 **Screenshot 6**
 
@@ -70,7 +70,7 @@ This lab focused on analyzing the structure of raw email headers to trace messag
 
 ---
 
-## Lessons Learned
+## 📌 Lessons Learned
 - Reading raw headers reveals the true sender path and bypasses deceptive display names.  
 - The **Message-ID**, **Return-Path**, and **Received** chain are critical for verifying legitimacy.  
 - Always compare **From**, **Reply-To**, and **Return-Path** for mismatched domains.  
@@ -79,7 +79,7 @@ This lab focused on analyzing the structure of raw email headers to trace messag
 
 ---
 
-## Resources and Tools
+## 📌 Resources and Tools
 - [Email Header Package for Sublime Text](https://packagecontrol.io/packages/Email%20Header)  
 - [13Cubed Email Header Repo](https://github.com/13Cubed/EmailHeader)    
 - [WHOIS DomainTools](https://whois.domaintools.com/)  
