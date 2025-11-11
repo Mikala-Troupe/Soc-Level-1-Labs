@@ -1,7 +1,7 @@
 # Week 2 — Email Authentication Methods ✉️
 
 ## Overview
-This week I learned how **SPF**, **DKIM**, and **DMARC** work together to verify that emails actually come from who they claim to — and how to check them manually using tools like `nslookup`, `dig`, and MXToolbox.
+This week I learned how **SPF**, **DKIM**, and **DMARC** work together to verify that emails actually come from who they claim to, and how to check them manually using tools like `nslookup`, `dig`, and MXToolbox.
 
 ---
 
