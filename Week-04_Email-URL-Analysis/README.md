@@ -26,17 +26,17 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 ![Screenshot 1 – Navigate to URL Analysis Folder](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/a5d4e486a2d9f2179866dcd8a52e1d0307b2627d/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS1.png)  
 **Screenshot 1** — Organized environment for URL analysis.
 
-![Screenshot 2 – Sample 1 Email](./screenshots/sample1-email.png)  
+![Screenshot 2 – Sample 1 Email](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/bf4b46ed52dab432500cb751ad1a28d7758ca858/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS2.png)  
 **Screenshot 2** — Opened the raw email sample for inspection.
 
-![Screenshot 3 – Open in Terminal](./screenshots/open-in-terminal.png)  
-![Screenshot 4 – Open in Sublime Text](./screenshots/open-in-sublime.png)  
+![Screenshot 3 – Open in Terminal](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/bf4b46ed52dab432500cb751ad1a28d7758ca858/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS3.png)  
+![Screenshot 4 – Open in Sublime Text](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/bf4b46ed52dab432500cb751ad1a28d7758ca858/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS4.png)  
 **Screenshots 3 & 4** — Viewed the email body in both Terminal and Sublime Text to make HTML and links easier to read.
 
 ---
 
 ### Searching for Links
-![Screenshot 5 – Find “http”](./screenshots/find-http.png)  
+![Screenshot 5 – Find “http”](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/bf4b46ed52dab432500cb751ad1a28d7758ca858/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS5.png)  
 **Screenshot 5** — Searched for `http` using **Ctrl + F**, finding four matches including a *“Reactivate Your Account”* button.
 
 ![Screenshot 6 – Find “<a” (anchor tags)](./screenshots/find-anchor-tag.png)  
