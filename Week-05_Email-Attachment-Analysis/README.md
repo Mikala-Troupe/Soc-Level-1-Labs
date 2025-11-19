@@ -7,7 +7,7 @@ The goal of this lab was to learn how to safely extract attachments from raw ema
 
 ---
 
-## 🧰 Tools Used
+## 📌 Tools Used
 - **Terminal / CLI**: For extracting attachments and collecting hashes  
 - **emldump.py (Didier Stevens Suite)**: To extract attachments from `.eml` files  
 - **Sublime Text**: To view MIME structure and raw email content  
@@ -91,7 +91,7 @@ Useful when cross-validating findings between multiple threat-intel platforms.
 
 ---
 
-## 🧾 Notes / Takeaways
+## 📌 Notes / Takeaways
 - Always analyze attachments in a **controlled environment** (VM, sandbox, isolated Linux machine).  
 - ISO files, ZIPs, Office documents, and scripts frequently hide **malware payloads**.  
 - File hashes serve as **unique identifiers** that can be checked across multiple threat-intel platforms.  
@@ -102,7 +102,7 @@ Useful when cross-validating findings between multiple threat-intel platforms.
 
 ---
 
-## 📚 Concepts Introduced
+## 📌 Concepts Introduced
 | Concept | Purpose / Use |
 |--------|----------------|
 | MIME Structure | Shows how email content and attachments are organized internally |
@@ -114,7 +114,7 @@ Useful when cross-validating findings between multiple threat-intel platforms.
 
 ---
 
-## 🧠 Skills Learned
+## 📌 Skills Learned
 - Extracting attachments from raw email `.eml` files  
 - Understanding MIME structure and locating embedded objects  
 - Hashing suspicious files on Linux/macOS/Windows  
