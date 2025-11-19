@@ -7,17 +7,17 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 ---
 
 ## 🧰 Tools Used
-- **Terminal / CLI** — to view raw email content and run Python scripts  
-- **Sublime Text** — for readable HTML and searching for hidden links  
-- **CyberChef** — decoding quoted-printable, extracting URLs, defanging  
-- **Email-IOC-Extractor (Python Script)** — automated IOC extraction  
-- **PhishTank** — community-reported phishing URL checking  
-- **URL2PNG** — safe visual preview of suspicious webpages  
-- **URLScan.io** — sandbox and behavioral URL analysis  
-- **VirusTotal** — multi-engine URL reputation scanning  
-- **URLVoid** — domain blocklist and reputation checks  
-- **WannaBrowser.net** — retrieve raw HTML + HTTP responses  
-- **URLHaus / Unshorten.it** — investigate shortened or malicious URLs
+- **Terminal / CLI**: to view raw email content and run Python scripts  
+- **Sublime Text**: for readable HTML and searching for hidden links  
+- **CyberChef**: decoding quoted-printable, extracting URLs, defanging  
+- **Email-IOC-Extractor (Python Script)**: automated IOC extraction  
+- **PhishTank**: community-reported phishing URL checking  
+- **URL2PNG**: safe visual preview of suspicious webpages  
+- **URLScan.io**: sandbox and behavioral URL analysis  
+- **VirusTotal**: multi-engine URL reputation scanning  
+- **URLVoid**: domain blocklist and reputation checks  
+- **WannaBrowser.net**: retrieve raw HTML + HTTP responses  
+- **URLHaus / Unshorten.it**: investigate shortened or malicious URLs
 
 ---
 
