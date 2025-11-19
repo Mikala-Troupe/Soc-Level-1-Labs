@@ -114,7 +114,7 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 ## 📌 Notes / Takeaways
 - Always decode **quoted-printable** encoding to reveal true URLs.  
 - **Defang** URLs before storing, sharing, or reporting them.  
-- A single clean scan does **not** guarantee safety — use multiple intel sources.  
+- A single clean scan does **not** guarantee safety, use multiple intel sources.  
 - Newly registered domains (<30 days) are major phishing red flags.  
 - Inspect the **base domain** to understand attacker infrastructure (subdomains, redirects, campaign scope).  
 - Even URLs from well-known services (Google Drive, Dropbox, etc.) can host malicious content.  
