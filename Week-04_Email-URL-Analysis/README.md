@@ -23,7 +23,7 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 
 ## 📌 URL Discovery & Extraction
 
-![Screenshot 1 – Navigate to URL Analysis Folder](./screenshots/url-analysis-folder.png)  
+![Screenshot 1 – Navigate to URL Analysis Folder](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/a5d4e486a2d9f2179866dcd8a52e1d0307b2627d/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS1.png)  
 **Screenshot 1** — Organized environment for URL analysis.
 
 ![Screenshot 2 – Sample 1 Email](./screenshots/sample1-email.png)  
