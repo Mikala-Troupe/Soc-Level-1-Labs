@@ -1,7 +1,7 @@
 # Week 5: Email Attachment Analysis 📎
 
 ## Overview
-This week I practiced analyzing **email attachments**, which are one of the most common delivery methods for malware in phishing campaigns. Attachments can appear harmless—PDFs, ZIP files, ISO images, and documents, but can easily contain malicious payloads such as executables, scripts, or macros.
+This week I practiced analyzing **email attachments**, which are one of the most common delivery methods for malware in phishing campaigns. Attachments can appear harmless PDFs, ZIP files, ISO images, and documents, but can easily contain malicious payloads such as executables, scripts, or macros.
 
 The goal of this lab was to learn how to safely extract attachments from raw email files, understand where attachments live within MIME structure, generate file hashes for identification, and perform reputation checks using threat-intelligence tools like VirusTotal and Cisco Talos.
 
