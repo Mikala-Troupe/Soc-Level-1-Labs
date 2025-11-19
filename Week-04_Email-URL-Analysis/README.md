@@ -74,7 +74,7 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 
 ### PhishTank
 ![Screenshot 12 – PhishTank](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/26088ec09a485e9204106f25921dc58e1fee2d74/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS12.png)  
-**Screenshot 12** — Checked URLs against [PhishTank.org](https://phishtank.org), an open phishing-URL verification database.
+**Screenshot 12** — Checked a random URL from [PhishTank.org](https://phishtank.org), an open phishing-URL verification database.
 
 ### URL2PNG
 ![Screenshot 13 – URL2PNG Preview](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/26088ec09a485e9204106f25921dc58e1fee2d74/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS13.png)  
