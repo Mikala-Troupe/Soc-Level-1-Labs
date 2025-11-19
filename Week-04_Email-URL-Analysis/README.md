@@ -73,15 +73,15 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 ## 📌 URL Reputation & Threat Intelligence Tools
 
 ### PhishTank
-![Screenshot 12 – PhishTank](./screenshots/phishtank.png)  
+![Screenshot 12 – PhishTank](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/26088ec09a485e9204106f25921dc58e1fee2d74/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS12.png)  
 **Screenshot 12** — Checked URLs against [PhishTank.org](https://phishtank.org), an open phishing-URL verification database.
 
 ### URL2PNG
-![Screenshot 13 – URL2PNG Preview](./screenshots/url2png.png)  
+![Screenshot 13 – URL2PNG Preview](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/26088ec09a485e9204106f25921dc58e1fee2d74/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS13.png)  
 **Screenshot 13** — Used URL2PNG to safely preview what the malicious page looks like without visiting it.
 
 ### URLScan.io
-![Screenshot 14 – URLScan Report](./screenshots/urlscan.png)  
+![Screenshot 14 – URLScan Report](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/26088ec09a485e9204106f25921dc58e1fee2d74/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS14.png)  
 **Screenshot 14** — URLScan revealed:
 - Server hosted in **Singapore**  
 - Domain newly registered (<30 days)  
@@ -89,16 +89,16 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 - ISP + IP information linked to suspicious hosting  
 
 ### VirusTotal
-![Screenshot 15 – VirusTotal Scan 1](./screenshots/virustotal-1.png)  
-![Screenshot 16 – VirusTotal Scan 2](./screenshots/virustotal-2.png)  
+![Screenshot 15 – VirusTotal Scan 1](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/26088ec09a485e9204106f25921dc58e1fee2d74/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS15.png)  
+![Screenshot 16 – VirusTotal Scan 2](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/26088ec09a485e9204106f25921dc58e1fee2d74/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS16.png)  
 **Screenshots 15 & 16** — VirusTotal aggregated results from dozens of engines confirming the URL as malicious.
 
 ### URLVoid
-![Screenshot 17 – URLVoid](./screenshots/urlvoid.png)  
+![Screenshot 17 – URLVoid](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/26088ec09a485e9204106f25921dc58e1fee2d74/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS17.png)  
 **Screenshot 17** — URLVoid scanned 30+ blocklists, producing additional reputation insights.
 
 ### WannaBrowser
-![Screenshot 18 – WannaBrowser Results](./screenshots/wannabrowser.png)  
+![Screenshot 18 – WannaBrowser Results](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/26088ec09a485e9204106f25921dc58e1fee2d74/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS18.png)  
 **Screenshot 18** — Retrieved raw HTML + HTTP response to inspect the site’s content safely.
 
 ---
