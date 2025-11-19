@@ -31,7 +31,7 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 
 ![Screenshot 3 – Open in Terminal](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/bf4b46ed52dab432500cb751ad1a28d7758ca858/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS3.png)  
 ![Screenshot 4 – Open in Sublime Text](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/bf4b46ed52dab432500cb751ad1a28d7758ca858/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS4.png)  
-**Screenshots 3 & 4** — Viewed the email body in both Terminal and Sublime Text to make HTML and links easier to read.
+**Screenshots 3 & 4** — Opened the email body in Sublime Text using the terminal to make HTML and links easier to read.
 
 ---
 
