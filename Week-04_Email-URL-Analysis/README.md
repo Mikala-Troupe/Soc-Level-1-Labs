@@ -1,4 +1,4 @@
-# Week 4 — Email URL Analysis 🔗
+# Week 4: Email URL Analysis 🔗
 
 ## Overview
 This week I focused on analyzing URLs embedded in phishing emails. The goal was to identify how attackers disguise malicious links, extract and decode URLs safely, and perform reputation checks using multiple online tools.  
