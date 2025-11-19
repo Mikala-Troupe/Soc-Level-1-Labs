@@ -39,33 +39,33 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 ![Screenshot 5 – Find “http”](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/bf4b46ed52dab432500cb751ad1a28d7758ca858/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS5.png)  
 **Screenshot 5** — Searched for `http` using **Ctrl + F**, finding four matches including a *“Reactivate Your Account”* button.
 
-![Screenshot 6 – Find “<a” (anchor tags)](./screenshots/find-anchor-tag.png)  
+![Screenshot 6 – Find “<a” (anchor tags)](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/14fdacc966fd0a6039355c4c1cdb722a049355d9/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS6.png)  
 **Screenshot 6** — Used the `<a` search (HTML anchor tags) to locate all hyperlinks without risk of accidentally opening them.
 
 ---
 
 ### Quoted-Printable Encoding
-![Screenshot 7 – Quoted-Printable Encoding](./screenshots/quoted-printable.png)  
+![Screenshot 7 – Quoted-Printable Encoding](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/14fdacc966fd0a6039355c4c1cdb722a049355d9/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS7.png)  
 **Screenshot 7** — Identified *quoted-printable* encoding, where URLs are split into multiple lines and special characters are replaced using `=xx` hexadecimal pairs.
 
 ---
 
 ## 📌 Decoding & Defanging URLs
 
-![Screenshot 8 – CyberChef Decoding](./screenshots/cyberchef-decode.png)  
+![Screenshot 8 – CyberChef Decoding](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/14fdacc966fd0a6039355c4c1cdb722a049355d9/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS8.png)  
 **Screenshot 8** — Uploaded the email to **CyberChef** and used *From Quoted Printable* + *Extract URLs* to decode and identify embedded URLs.
 
-![Screenshot 9 – Defanging URLs](./screenshots/defang-urls.png)  
+![Screenshot 9 – Defanging URLs](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/14fdacc966fd0a6039355c4c1cdb722a049355d9/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS9.png)  
 **Screenshot 9** — Defanged URLs (`https → hxxps`) so they could be documented safely without becoming clickable.
 
 ---
 
 ## 📌 Automating URL Extraction
 
-![Screenshot 10 – Email IOC Extractor Script](./screenshots/email-ioc-extractor.png)  
+![Screenshot 10 – Email IOC Extractor Script](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/14fdacc966fd0a6039355c4c1cdb722a049355d9/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS10.png)  
 **Screenshot 10** — Used the **Email-IOC-Extractor** Python script to quickly extract URLs, IPs, and relevant headers.
 
-![Screenshot 11 – Running Script in Terminal](./screenshots/run-script.png)  
+![Screenshot 11 – Running Script in Terminal](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/14fdacc966fd0a6039355c4c1cdb722a049355d9/Week-04_Email-URL-Analysis/Week-04_Email-URL-Analysis/screenshots/Lab4SS11.png)  
 **Screenshot 11** — Script output showing extracted IOCs such as URLs, sender information, IP addresses, and authentication-related headers.
 
 ---
