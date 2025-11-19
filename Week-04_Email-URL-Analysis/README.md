@@ -6,7 +6,7 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 
 ---
 
-## 🧰 Tools Used
+## 📌 Tools Used
 - **Terminal / CLI**: To view raw email content and run Python scripts  
 - **Sublime Text**: For readable HTML and searching for hidden links  
 - **CyberChef**: Decoding quoted-printable, extracting URLs, defanging  
@@ -111,7 +111,7 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 
 ---
 
-## 🧾 Notes / Takeaways
+## 📌 Notes / Takeaways
 - Always decode **quoted-printable** encoding to reveal true URLs.  
 - **Defang** URLs before storing, sharing, or reporting them.  
 - A single clean scan does **not** guarantee safety — use multiple intel sources.  
@@ -121,7 +121,7 @@ I practiced searching email bodies for hyperlinks, decoding quoted-printable tex
 
 ---
 
-## 📚 Concepts Introduced
+## 📌 Concepts Introduced
 | Concept | Purpose / Use |
 |----------|----------------|
 Quoted-Printable Encoding | Obfuscates email content using `=xx` hex and line wrapping |
@@ -133,7 +133,7 @@ Short-Link Analysis | Expands shortened URLs to reveal true destinations |
 
 ---
 
-## 🧠 Skills Learned
+## 📌 Skills Learned
 - Locating and safely analyzing embedded links  
 - Decoding quoted-printable and other encodings  
 - Defanging URLs for safe documentation  
