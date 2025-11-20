@@ -59,9 +59,9 @@ This illustrates how the malicious document triggers the exploit, downloads exte
 ![Screenshot 9 – Network Indicators](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS9.png)  
 ![Screenshot 10 – Behavioral Summary](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS10.png)  
 **Screenshots 7–10**: These views highlighted numerous **malicious indicators**, including:  
-- Suspicious child processes  
-- Registry modifications  
-- External network callbacks  
+- Spawns a lot of processes  
+- Network Related  
+- Installation/Persistence  
 - Evidence of exploitation consistent with CVE-2017-0199
 
 ---
