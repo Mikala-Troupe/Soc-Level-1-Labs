@@ -17,20 +17,20 @@ I used tools like **Hybrid-Analysis**, **Falcon Sandbox**, **Joe Sandbox**, and 
 
 ## 📌 Dynamic Analysis Walkthrough
 
-![Screenshot 1 – Hybrid Analysis Homepage](./screenshots/Lab6SS1.png)  
+![Screenshot 1 – Hybrid Analysis Homepage](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS1.png)  
 **Screenshot 1**: Navigated to **hybrid-analysis.com**, a free malware analysis service powered by CrowdStrike Falcon Sandbox.  
 This platform allows analysts to upload suspicious files and automatically detonate them in a controlled environment.
 
 ---
 
-![Screenshot 2 – Malicious Sample Overview](./screenshots/Lab6SS2.png)  
+![Screenshot 2 – Malicious Sample Overview](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS2.png)  
 **Screenshot 2**: Uploaded a malicious document.  
 Hybrid Analysis flagged the file as **malicious** and identified a specific **CVE** associated with the exploit.
 
 ---
 
-![Screenshot 3 – Researching the CVE](./screenshots/Lab6SS3.png)  
-![Screenshot 4 – CVE Details](./screenshots/Lab6SS4.png)  
+![Screenshot 3 – Researching the CVE](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS3.png)  
+![Screenshot 4 – CVE Details](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS4.png)  
 **Screenshots 3 & 4**: Researched **CVE-2017-0199**, a widely exploited Microsoft Office vulnerability.  
 - Allows attackers to execute arbitrary code using a crafted document  
 - Affects multiple Office versions  
@@ -38,14 +38,14 @@ Reference: https://cloud.google.com/blog/topics/threat-intelligence/cve-2017-019
 
 ---
 
-![Screenshot 5 – Attack Chain Reference](./screenshots/Lab6SS5.png)  
+![Screenshot 5 – Attack Chain Reference](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS5.png)  
 **Screenshot 5**: Reviewed an attack chain breakdown from Medium:
 https://medium.com/@asmcybersecurity/diving-deeper-into-the-microsoft-office-cve-2017-0199-vulnerability-11bd3e725ab7  
 This illustrates how the malicious document triggers the exploit, downloads external payloads, and executes attacker-controlled code.
 
 ---
 
-![Screenshot 6 – Falcon Sandbox Dynamic Report](./screenshots/Lab6SS6.png)  
+![Screenshot 6 – Falcon Sandbox Dynamic Report](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS6.png)  
 **Screenshot 6**: Viewed the **Falcon Sandbox** dynamic report, showing how the malicious file behaved when detonated:  
 - Processes spawned  
 - Network communications  
@@ -54,10 +54,10 @@ This illustrates how the malicious document triggers the exploit, downloads exte
 
 ---
 
-![Screenshot 7 – Malicious Indicators](./screenshots/Lab6SS7.png)  
-![Screenshot 8 – Registry & Process Findings](./screenshots/Lab6SS8.png)  
-![Screenshot 9 – Network Indicators](./screenshots/Lab6SS9.png)  
-![Screenshot 10 – Behavioral Summary](./screenshots/Lab6SS10.png)  
+![Screenshot 7 – Malicious Indicators](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS7.png)  
+![Screenshot 8 – Registry & Process Findings](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS8.png)  
+![Screenshot 9 – Network Indicators](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS9.png)  
+![Screenshot 10 – Behavioral Summary](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS10.png)  
 **Screenshots 7–10**: These views highlighted numerous **malicious indicators**, including:  
 - Suspicious child processes  
 - Registry modifications  
@@ -66,14 +66,14 @@ This illustrates how the malicious document triggers the exploit, downloads exte
 
 ---
 
-![Screenshot 11 – Joe Sandbox](./screenshots/Lab6SS11.png)  
+![Screenshot 11 – Joe Sandbox](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS11.png)  
 **Screenshot 11**: Explored **Joe Sandbox**, a powerful multi-OS malware analysis engine.  
 Requires a business email for registration, so it's less accessible than Hybrid Analysis.  
 Supports Windows, macOS, Linux, and Android detonation environments.
 
 ---
 
-![Screenshot 12 – ANY.RUN Sandbox](./screenshots/Lab6SS12.png)  
+![Screenshot 12 – ANY.RUN Sandbox](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/ab56ecab7361e526d8906c4103c30d15a3d4cfdb/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/Week-06_Dynamic-Attachment-Analysis-and-Sandboxing/screenshots/Lab6SS12.png)  
 **Screenshot 12**: Reviewed **ANY.RUN**, an interactive malware analysis platform.  
 Also requires an account with a business email for free usage.  
 Hybrid Analysis remains the preferred tool for accessibility and ease of use.
