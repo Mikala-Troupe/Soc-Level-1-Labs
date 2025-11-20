@@ -7,7 +7,7 @@ It also integrates with **VirusTotal**, providing additional context on URLs, fi
 
 ---
 
-## 🧰 Tools Used
+## 📌 Tools Used
 - **PhishTool** (automated email analysis)
 - **VirusTotal** integration (URL & hash lookups)
 - Built-in PhishTool tabs: Rendered, HTML, Source, Details, Transmission, X-Headers, Authentication, Attachments, URLs
@@ -111,7 +111,7 @@ This supports clean SOC documentation and makes reporting easier.
 
 ---
 
-## 🧾 Notes / Takeaways
+## 📌 Notes / Takeaways
 - PhishTool accelerates phishing investigations by automatically parsing and categorizing key indicators.  
 - Automated enrichment (URLs, headers, authentication, attachments) eliminates manual parsing.  
 - Mismatched **Reply-To**, **Return-Path**, and **From** domains strongly indicate spoofing.  
@@ -122,7 +122,7 @@ This supports clean SOC documentation and makes reporting easier.
 
 ---
 
-## 📚 Concepts Introduced
+## 📌 Concepts Introduced
 | Concept | Purpose / Use |
 |--------|----------------|
 | PhishTool | Automated phishing email analysis and reporting |
@@ -135,7 +135,7 @@ This supports clean SOC documentation and makes reporting easier.
 
 ---
 
-## 🧠 Skills Learned
+## 📌 Skills Learned
 - Uploading suspicious emails for automated analysis  
 - Interpreting PhishTool’s tabs (Details, Transmission, X-Headers, Authentication)  
 - Identifying spoofing indicators in Reply-To and Return-Path fields  
