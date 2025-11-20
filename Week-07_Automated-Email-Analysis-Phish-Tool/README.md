@@ -16,14 +16,14 @@ It also integrates with **VirusTotal**, providing additional context on URLs, fi
 
 ## 📌 PhishTool Email Analysis Walkthrough
 
-![Screenshot 1 – PhishTool Dashboard](./screenshots/Lab7SS1.png)  
+![Screenshot 1 – PhishTool Dashboard](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0eaec5ee3ecb52c69253dd8b0b5f812d4e9269a1/Week-07_Automated-Email-Analysis-Phish-Tool/Week-07_Automated-Email-Analysis-Phish-Tool/screenshots/Lab7SS1.png)  
 **Screenshot 1**: Opened **PhishTool**, a cloud-based phishing analysis solution.  
 It automatically extracts metadata, parses URLs, identifies suspicious fields, and generates reports.  
 You can also integrate VirusTotal to check attachments, URLs, and file hashes all from the same pane.
 
 ---
 
-![Screenshot 2 – Uploaded Sample Email](./screenshots/Lab7SS2.png)  
+![Screenshot 2 – Uploaded Sample Email](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0eaec5ee3ecb52c69253dd8b0b5f812d4e9269a1/Week-07_Automated-Email-Analysis-Phish-Tool/Week-07_Automated-Email-Analysis-Phish-Tool/screenshots/Lab7SS2.png)  
 **Screenshot 2**: Uploaded “Sample Email #1” (Chase Bank phishing email).  
 PhishTool provides multiple views for analysis:  
 - **Rendered**: How the victim sees the email  
@@ -32,8 +32,8 @@ PhishTool provides multiple views for analysis:
 
 ---
 
-![Screenshot 3 – Details Tab](./screenshots/Lab7SS3.png)  
-![Screenshot 4 – Header Details](./screenshots/Lab7SS4.png)  
+![Screenshot 3 – Details Tab](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0eaec5ee3ecb52c69253dd8b0b5f812d4e9269a1/Week-07_Automated-Email-Analysis-Phish-Tool/Week-07_Automated-Email-Analysis-Phish-Tool/screenshots/Lab7SS3.png)  
+![Screenshot 4 – Header Details](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0eaec5ee3ecb52c69253dd8b0b5f812d4e9269a1/Week-07_Automated-Email-Analysis-Phish-Tool/Week-07_Automated-Email-Analysis-Phish-Tool/screenshots/Lab7SS4.png)  
 **Screenshots 3 & 4**: The **Details** tab summarizes key header fields:  
 - **From / To**  
 - **Timestamp**  
@@ -46,7 +46,7 @@ These inconsistencies immediately suggest spoofing.
 
 ---
 
-![Screenshot 5 – Transmission Chain](./screenshots/Lab7SS5.png)  
+![Screenshot 5 – Transmission Chain](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0eaec5ee3ecb52c69253dd8b0b5f812d4e9269a1/Week-07_Automated-Email-Analysis-Phish-Tool/Week-07_Automated-Email-Analysis-Phish-Tool/screenshots/Lab7SS5.png)  
 **Screenshot 5**: The **Transmission** tab displays the full chain of mail servers the email passed through.  
 Extracted from the *Received* headers, this view shows:  
 - All Mail Transfer Agents (MTAs) involved  
@@ -58,13 +58,13 @@ This helps track the email’s path and confirm legitimacy.
 
 ---
 
-![Screenshot 6 – X-Headers](./screenshots/Lab7SS6.png)  
+![Screenshot 6 – X-Headers](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0eaec5ee3ecb52c69253dd8b0b5f812d4e9269a1/Week-07_Automated-Email-Analysis-Phish-Tool/Week-07_Automated-Email-Analysis-Phish-Tool/screenshots/Lab7SS6.png)  
 **Screenshot 6**: The **X-Headers** tab lists extended/custom headers added by security products or mail systems.  
 These can include spam scores, filtering signatures, additional metadata, or tool-specific indicators.
 
 ---
 
-![Screenshot 7 – Authentication Results](./screenshots/Lab7SS7.png)  
+![Screenshot 7 – Authentication Results](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0eaec5ee3ecb52c69253dd8b0b5f812d4e9269a1/Week-07_Automated-Email-Analysis-Phish-Tool/Week-07_Automated-Email-Analysis-Phish-Tool/screenshots/Lab7SS7.png)  
 **Screenshot 7**: The **Authentication** tab checks SPF, DKIM, and DMARC.  
 Findings:  
 - **SPF Passed**: Originating IP matched approved sender  
@@ -74,19 +74,19 @@ A DMARC fail is strong evidence of a phishing email.
 
 ---
 
-![Screenshot 8 – Attachments View](./screenshots/Lab7SS8.png)  
+![Screenshot 8 – Attachments View](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0eaec5ee3ecb52c69253dd8b0b5f812d4e9269a1/Week-07_Automated-Email-Analysis-Phish-Tool/Week-07_Automated-Email-Analysis-Phish-Tool/screenshots/Lab7SS8.png)  
 **Screenshot 8**: The **Attachments** tab lists any files included in the email.  
 (Our sample had none, but this tab is used for pulling file hashes or detonating attachments.)
 
 ---
 
-![Screenshot 9 – URLs Extracted](./screenshots/Lab7SS9.png)  
+![Screenshot 9 – URLs Extracted](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0eaec5ee3ecb52c69253dd8b0b5f812d4e9269a1/Week-07_Automated-Email-Analysis-Phish-Tool/Week-07_Automated-Email-Analysis-Phish-Tool/screenshots/Lab7SS9.png)  
 **Screenshot 9**: The **URLs** tab lists all extracted hyperlinks, including hidden or encoded ones.  
 Useful for spotting shortened URLs or obfuscated credential-harvesting links.
 
 ---
 
-![Screenshot 10 – Sample Resolution](./screenshots/Lab7SS10.png)  
+![Screenshot 10 – Sample Resolution](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0eaec5ee3ecb52c69253dd8b0b5f812d4e9269a1/Week-07_Automated-Email-Analysis-Phish-Tool/Week-07_Automated-Email-Analysis-Phish-Tool/screenshots/Lab7SS10.png)  
 **Screenshot 10**: After reviewing indicators, clicking **Resolve** allows us to edit and finalize the classification.  
 PhishTool automatically fills:  
 - **Email Disposition:** *Malicious*  
@@ -100,7 +100,7 @@ PhishTool automatically fills:
 
 ---
 
-![Screenshot 11 – Updated Analyst Dashboard](./screenshots/Lab7SS11.png)  
+![Screenshot 11 – Updated Analyst Dashboard](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/0eaec5ee3ecb52c69253dd8b0b5f812d4e9269a1/Week-07_Automated-Email-Analysis-Phish-Tool/Week-07_Automated-Email-Analysis-Phish-Tool/screenshots/Lab7SS11.png)  
 **Screenshot 11**: After resolving the phish, the dashboard updates with:  
 - Manual uploads  
 - Resolved  
