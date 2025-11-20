@@ -19,13 +19,13 @@ I used Sublime Text, IOC extraction scripts, WHOIS lookups, and URL analysis too
 
 ## 📌 Documentation & Reporting Walkthrough
 
-![Screenshot 1: Sample Email & Report Template](./screenshots/Lab8SS1.png)  
+![Screenshot 1: Sample Email & Report Template](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/56cf94c0854ef571ce6e071285e61032bd5807e6/Week-08_Documentation-and-Reporting/Week-08_Documentation-and-Reporting/screenshots/Lab8SS1.png)  
 **Screenshot 1:** Opened the phishing email sample and the reporting template in **Sublime Text**.  
 This template provides structure for documenting headers, URLs, sender information, and findings.
 
 ---
 
-![Screenshot 2: Running eioc.py](./screenshots/Lab8SS2.png)  
+![Screenshot 2: Running eioc.py](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/56cf94c0854ef571ce6e071285e61032bd5807e6/Week-08_Documentation-and-Reporting/Week-08_Documentation-and-Reporting/screenshots/Lab8SS2.png)  
 **Screenshot 2:** Used the `eioc.py` script to extract IOCs directly from the email file.  
 The script outputs:  
 - Headers  
@@ -36,7 +36,7 @@ This helps gather all needed data for the final report.
 
 ---
 
-![Screenshot 3: Extracted Headers](./screenshots/Lab8SS3.png)  
+![Screenshot 3: Extracted Headers](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/56cf94c0854ef571ce6e071285e61032bd5807e6/Week-08_Documentation-and-Reporting/Week-08_Documentation-and-Reporting/screenshots/Lab8SS3.png)  
 **Screenshot 3:** Navigated to the **Extracted Headers** section of the script output.  
 Documented key values such as From/To, Reply-To, Return-Path, Sender IP, Message-ID, and rDNS.
 
@@ -62,13 +62,13 @@ Documented key values such as From/To, Reply-To, Return-Path, Sender IP, Message
 
 ---
 
-![Screenshot 4: Resolving the Sender IP](./screenshots/Lab8SS4.png)  
+![Screenshot 4: Resolving the Sender IP](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/56cf94c0854ef571ce6e071285e61032bd5807e6/Week-08_Documentation-and-Reporting/Week-08_Documentation-and-Reporting/screenshots/Lab8SS4.png)  
 **Screenshot 4:** Used **DomainTools WHOIS Lookup** to resolve the **Sender IP**.  
 WHOIS provides ownership, location, and hosting information, helping analysts determine whether the IP belongs to a legitimate provider or a suspicious source.
 
 ---
 
-![Screenshot 5: Identifying the Correct URL](./screenshots/Lab8SS5.png)  
+![Screenshot 5: Identifying the Correct URL](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/56cf94c0854ef571ce6e071285e61032bd5807e6/Week-08_Documentation-and-Reporting/Week-08_Documentation-and-Reporting/screenshots/Lab8SS5.png)  
 **Screenshot 5:** Located the correct URL associated with the “Go to your account” call-to-action button.  
 Steps taken:  
 - Hovered over email button → noted domain beginning with **“cabinet”**  
@@ -79,7 +79,7 @@ Added the defanged version (`hxxps://`) to the report.
 
 ---
 
-![Screenshot 6: URL Analysis Using urlscan.io](./screenshots/Lab8SS6.png)  
+![Screenshot 6: URL Analysis Using urlscan.io](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/56cf94c0854ef571ce6e071285e61032bd5807e6/Week-08_Documentation-and-Reporting/Week-08_Documentation-and-Reporting/screenshots/Lab8SS6.png)  
 **Screenshot 6:** Submitted the URL to **urlscan.io**.  
 Findings:  
 - Identified **potential malicious activity**  
@@ -88,7 +88,7 @@ Findings:
 
 ---
 
-![Screenshot 7: VirusTotal Second Opinion](./screenshots/Lab8SS7.png)  
+![Screenshot 7: VirusTotal Second Opinion](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/56cf94c0854ef571ce6e071285e61032bd5807e6/Week-08_Documentation-and-Reporting/Week-08_Documentation-and-Reporting/screenshots/Lab8SS7.png)  
 **Screenshot 7:** Verified the URL with **VirusTotal**.  
 Results:  
 - **10/98** vendors flagged it as malicious  
@@ -98,8 +98,8 @@ Second opinions support stronger case documentation.
 
 ---
 
-![Screenshot 8: Final Report Draft](./screenshots/Lab8SS8.png)  
-![Screenshot 9: Completed Report](./screenshots/Lab8SS9.png)  
+![Screenshot 8: Final Report Draft](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/56cf94c0854ef571ce6e071285e61032bd5807e6/Week-08_Documentation-and-Reporting/Week-08_Documentation-and-Reporting/screenshots/Lab8SS8.png)  
+![Screenshot 9: Completed Report](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/56cf94c0854ef571ce6e071285e61032bd5807e6/Week-08_Documentation-and-Reporting/Week-08_Documentation-and-Reporting/screenshots/Lab8SS9.png)  
 **Screenshots 8 & 9:** Completed the final phishing report.  
 Included:  
 - Header analysis  
