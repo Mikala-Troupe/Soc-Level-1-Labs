@@ -6,7 +6,7 @@ I used tools like **Hybrid-Analysis**, **Falcon Sandbox**, **Joe Sandbox**, and 
 
 ---
 
-## 🧰 Tools Used
+## 📌 Tools Used
 - **Hybrid-Analysis / Falcon Sandbox**
 - **Joe Sandbox**
 - **ANY.RUN**
@@ -80,7 +80,7 @@ Hybrid Analysis remains the preferred tool for accessibility and ease of use.
 
 ---
 
-## 🧾 Notes / Takeaways
+## 📌 Notes / Takeaways
 - **Sandboxing** isolates harmful files in a safe environment, preventing real damage.  
 - Dynamic analysis helps detect **behavior**, not just static signatures.  
 - During analysis, always observe:
@@ -93,7 +93,7 @@ Hybrid Analysis remains the preferred tool for accessibility and ease of use.
 
 ---
 
-## 📚 Concepts Introduced
+## 📌 Concepts Introduced
 | Concept | Purpose / Use |
 |--------|----------------|
 | Sandbox Environment | Safely detonates malware in an isolated VM |
@@ -105,7 +105,7 @@ Hybrid Analysis remains the preferred tool for accessibility and ease of use.
 
 ---
 
-## 🧠 Skills Learned
+## 📌 Skills Learned
 - Uploading suspicious attachments to a dynamic sandbox  
 - Interpreting behavioral indicators (process, registry, network, file actions)  
 - Understanding how Office document exploits (like CVE-2017-0199) operate  
