@@ -7,7 +7,7 @@ I used Sublime Text, IOC extraction scripts, WHOIS lookups, and URL analysis too
 
 ---
 
-## 🧰 Tools Used
+## 📌 Tools Used
 - **Sublime Text** (documentation editor)  
 - **eioc.py** (email IOC extraction script)  
 - **DomainTools WHOIS Lookup**  
@@ -111,7 +111,7 @@ This mirrors real SOC workflows where documentation must be accurate, clear, and
 
 ---
 
-## 🧾 Notes / Takeaways
+## 📌 Notes / Takeaways
 - Documentation is one of the most important SOC responsibilities — clear writing leads to clear decisions.  
 - IOC extraction scripts speed up analysis and ensure consistency.  
 - WHOIS lookups help validate sender origin and detect suspicious infrastructure.  
@@ -122,7 +122,7 @@ This mirrors real SOC workflows where documentation must be accurate, clear, and
 
 ---
 
-## 📚 Concepts Introduced
+## 📌 Concepts Introduced
 | Concept | Purpose / Use |
 |--------|----------------|
 | Documentation Template | Provides structure for SOC reporting |
@@ -134,7 +134,7 @@ This mirrors real SOC workflows where documentation must be accurate, clear, and
 
 ---
 
-## 🧠 Skills Learned
+## 📌 Skills Learned
 - Extracting and documenting headers, URLs, and sender information  
 - Using WHOIS to resolve suspicious IP addresses  
 - Identifying the correct phishing URL among many extracted links  
