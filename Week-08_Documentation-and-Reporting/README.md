@@ -1,1 +1,131 @@
+# Week 8 — Documentation & Reporting 📝
+
+## Overview
+This week focused on practicing **professional documentation and reporting**, an essential skill for SOC analysts.  
+The goal was to take a phishing email sample, extract key indicators, verify malicious activity, and assemble a clean, organized phishing report.  
+I used Sublime Text, IOC extraction scripts, WHOIS lookups, and URL analysis tools to pull the data needed for the report.
+
+---
+
+## 🧰 Tools Used
+- **Sublime Text** (documentation editor)  
+- **eioc.py** (email IOC extraction script)  
+- **DomainTools WHOIS Lookup**  
+- **urlscan.io**  
+- **VirusTotal**  
+- **Grep command** (terminal searching)
+
+---
+
+## 📌 Documentation & Reporting Walkthrough
+
+![Screenshot 1: Sample Email & Report Template](./screenshots/Lab8SS1.png)  
+**Screenshot 1:** Opened the phishing email sample and the reporting template in **Sublime Text**.  
+This template provides structure for documenting headers, URLs, sender information, and findings.
+
+---
+
+![Screenshot 2: Running eioc.py](./screenshots/Lab8SS2.png)  
+**Screenshot 2:** Used the `eioc.py` script to extract IOCs directly from the email file.  
+The script outputs:  
+- Headers  
+- URLs  
+- IP addresses  
+- Hashes (if applicable)  
+This helps gather all needed data for the final report.
+
+---
+
+![Screenshot 3: Extracted Headers](./screenshots/Lab8SS3.png)  
+**Screenshot 3:** Navigated to the **Extracted Headers** section of the script output.  
+Documented key values:  
+- From / To  
+- Reply-To  
+- Return-Path  
+- Sender IP  
+- Message-ID  
+These fields help identify spoofing and email origin.
+
+---
+
+![Screenshot 4: Resolving the Sender IP](./screenshots/Lab8SS4.png)  
+**Screenshot 4:** Used **DomainTools WHOIS Lookup** to resolve the **Sender IP**.  
+WHOIS provides ownership, location, and hosting information, helping analysts determine whether the IP belongs to a legitimate provider or a suspicious source.
+
+---
+
+![Screenshot 5: Identifying the Correct URL](./screenshots/Lab8SS5.png)  
+**Screenshot 5:** Located the correct URL associated with the “Go to your account” call-to-action button.  
+Steps taken:  
+- Hovered over email button → noted domain beginning with **“cabinet”**  
+- Returned to `eioc.py` output  
+- Searched using `grep "cabinet"`  
+- Found the matching extracted URL  
+Added the defanged version (`hxxps://`) to the report.
+
+---
+
+![Screenshot 6: URL Analysis Using urlscan.io](./screenshots/Lab8SS6.png)  
+**Screenshot 6:** Submitted the URL to **urlscan.io**.  
+Findings:  
+- Identified **potential malicious activity**  
+- Landing page appears to be a **credential capture** site impersonating SwissPass  
+- Submitted URL differed from the **Effective URL**, meaning it redirected to a `.host` domain, a common phishing behavior.
+
+---
+
+![Screenshot 7: VirusTotal Second Opinion](./screenshots/Lab8SS7.png)  
+**Screenshot 7:** Verified the URL with **VirusTotal**.  
+Results:  
+- **10/98** vendors flagged it as malicious  
+- Categorized primarily as **phishing**  
+
+Second opinions support stronger case documentation.
+
+---
+
+![Screenshot 8: Final Report Draft](./screenshots/Lab8SS8.png)  
+![Screenshot 9: Completed Report](./screenshots/Lab8SS9.png)  
+**Screenshots 8 & 9:** Completed the final phishing report.  
+Included:  
+- Header analysis  
+- Sender verification  
+- URL analysis  
+- Screenshot evidence  
+- Final disposition and classification  
+This mirrors real SOC workflows where documentation must be accurate, clear, and repeatable.
+
+---
+
+## 🧾 Notes / Takeaways
+- Documentation is one of the most important SOC responsibilities — clear writing leads to clear decisions.  
+- IOC extraction scripts speed up analysis and ensure consistency.  
+- WHOIS lookups help validate sender origin and detect suspicious infrastructure.  
+- URL analysis requires checking both the submitted URL **and** the effective (redirected) URL.  
+- Multiple threat-intel sources should always be used (urlscan.io + VirusTotal = stronger confidence).  
+- Reports must include: evidence, references, screenshots, and a final disposition.  
+- Professional formatting and clarity are essential for incident tracking and handoffs.
+
+---
+
+## 📚 Concepts Introduced
+| Concept | Purpose / Use |
+|--------|----------------|
+| Documentation Template | Provides structure for SOC reporting |
+| IOC Extraction | Quickly gathers indicators from email samples |
+| WHOIS Lookup | Identifies domain/IP ownership and reputation |
+| URL Redirection | Confirms whether a phishing page changes destinations |
+| URL Analysis Tools | Evaluate malicious behavior across multiple engines |
+| Case Reporting | Summarizes findings for SOC review and incident response |
+
+---
+
+## 🧠 Skills Learned
+- Extracting and documenting headers, URLs, and sender information  
+- Using WHOIS to resolve suspicious IP addresses  
+- Identifying the correct phishing URL among many extracted links  
+- Performing multi-source URL reputation analysis  
+- Creating professional SOC-style phishing reports  
+- Organizing findings logically for escalation or ticketing  
+
 
