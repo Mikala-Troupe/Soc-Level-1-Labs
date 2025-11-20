@@ -95,7 +95,7 @@ Useful when cross-validating findings between multiple threat-intel platforms.
 - Always analyze attachments in a **controlled environment** (VM, sandbox, isolated Linux machine).  
 - ISO files, ZIPs, Office documents, and scripts frequently hide **malware payloads**.  
 - File hashes serve as **unique identifiers** that can be checked across multiple threat-intel platforms.  
-- No single TI source is 100% accurate — always corroborate detection results across **multiple tools**.  
+- No single TI source is 100% accurate, always corroborate detection results across **multiple tools**.  
 - Command-line extraction helps reduce risk and maintains clean **forensic chain-of-custody**.  
 - Automated IOC extraction tools speed up investigations and reduce manual handling of malicious files.  
 - Thorough documentation (hashes, screenshots, notes) is essential for **SOC workflows** and report writing.
