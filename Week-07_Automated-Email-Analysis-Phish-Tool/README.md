@@ -131,6 +131,7 @@ This supports clean SOC documentation and makes reporting easier.
 | SPF / DKIM / DMARC | Email authentication frameworks to verify legitimacy |
 | URL Extraction | Identifies obfuscated or shortened malicious links |
 | Case Resolution | Standardizes phishing classifications & SOC documentation |
+| MTA (Mail Transfer Agent) | Servers responsible for routing, transferring, and relaying email between systems |
 
 ---
 
