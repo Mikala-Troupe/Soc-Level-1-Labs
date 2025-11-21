@@ -15,6 +15,18 @@ This repository captures my weekly SOC Level 1 learning write-ups, steps, findin
 | **7** | Automated Email Analysis with PhishTool  | Streamline triage with automated analysis tools                  | [View](./Week-07_Automated-Email-Analysis-Phish-Tool/README.md)        |
 | **8** | Documentation & Reporting                | Capture findings and write SOC-ready incident reports            | [View](./Week-08_Documentation-and-Reporting/README.md)                |
 
+## 🗓️ Weekly Index — Part 2: Network Security Lab Notes
+
+| Week   | Topic                                       | Focus                                                             | Link                                                                 |
+| ------ | ------------------------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **9**  | tcpdump: Capturing Network Traffic          | Learn how to capture raw packet data using tcpdump                | [View](./Week-09_tcpdump-Capturing-Network-Traffic/README.md)        |
+| **10** | tcpdump: Analyzing Network Traffic          | Analyze captured packets, protocols, and network activity         | [View](./Week-10_tcpdump-Analyzing-Network-Traffic/README.md)        |
+| **11** | tcpdump: Analyzing Network Traffic (Part 2) | Deepen analysis using filters, flags, and advanced tcpdump usage  | [View](./Week-11_tcpdump-Analyzing-Network-Traffic-Part-2/README.md) |
+| **12** | Wireshark: Capture & Display Features       | Capture packets and explore Wireshark’s display & filtering tools | [View](./Week-12_Wireshark-Capture-and-Display/README.md)            |
+| **13** | Wireshark: Analyzing Network Traffic        | Analyze packets, conversations, and protocols using Wireshark     | [View](./Week-13_Wireshark-Analyzing-Network-Traffic/README.md)      |
+| **14** | Snort: Reading and Writing Rules            | Understand Snort rulesets and write custom detection rules        | [View](./Week-14_Snort-Reading-and-Writing-Rules/README.md)          |
+| **15** | Snort: Intrusion Detection & Prevention     | Detect, alert, and block attacks using Snort IDS/IPS              | [View](./Week-15_Snort-Intrusion-Detection-and-Prevention/README.md) |
+
 
 
 ## 🧰 Tools I Use
