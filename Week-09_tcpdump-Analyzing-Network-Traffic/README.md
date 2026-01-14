@@ -7,7 +7,7 @@ Through filtering, timestamp analysis, string searching, and threat-intel valida
 
 ---
 
-## 🧰 Tools Used
+## 📌 Tools Used
 - **tcpdump**
 - **grep**
 - **WHOIS Lookup**
@@ -122,7 +122,7 @@ Identified the string *“This program cannot be run in DOS mode”*, which is c
 
 ---
 
-## 🧾 Notes / Takeaways
+## 📌 Notes / Takeaways
 - tcpdump is effective for identifying malicious behavior from the command line.
 - Display filters are essential for narrowing investigations.
 - HTTP traffic provides valuable visibility due to lack of encryption.
@@ -133,7 +133,7 @@ Identified the string *“This program cannot be run in DOS mode”*, which is c
 
 ---
 
-## 📚 Concepts Introduced
+## 📌 Concepts Introduced
 | Concept | Purpose / Use |
 |-------|---------------|
 | PCAP Analysis | Reviewing captured network traffic |
@@ -146,7 +146,7 @@ Identified the string *“This program cannot be run in DOS mode”*, which is c
 
 ---
 
-## 🧠 Skills Learned
+## 📌 Skills Learned
 - Reading and analyzing PCAPs with tcpdump  
 - Applying filters and timestamps for investigations  
 - Identifying suspicious network behavior  
