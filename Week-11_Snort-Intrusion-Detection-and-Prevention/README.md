@@ -40,7 +40,7 @@ Useful when working with large PCAPs and only needing a subset of packets.
 
 ![Screenshot 4: Timestamp Options](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/eb3a44662eadcdc56a39584b68fe661c022e3e3a/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS4.png)  
 ![Screenshot 5: Timestamp Options Continued](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/eb3a44662eadcdc56a39584b68fe661c022e3e3a/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS5.png)  
-![Screenshot 6: Timestamp Formats](./screenshots/Lab9SS6.png)  
+![Screenshot 6: Timestamp Formats](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS6.png)  
 **Screenshots 4–6:** Explored tcpdump timestamp display options.  
 - `-t`: Removes timestamps  
 - `-tt`: Displays Unix epoch timestamps  
@@ -53,51 +53,51 @@ Using Unix epoch timestamps is best practice for SOC documentation.
 
 ## Analyzing a Malicious PCAP Sample
 
-![Screenshot 7: Initial PCAP Review](./screenshots/Lab9SS7.png)  
+![Screenshot 7: Initial PCAP Review](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS7.png)  
 **Screenshot 7:** Analyzed `2021-09-14.pcap`, which contains traffic from a host infected with **LockBit malware**.  
 Identified **3,679 packets** and observed frequent communication between internal IP `10.0.0.168` and external IP `103.232.55.148` over HTTP (port 80).
 
 ---
 
-![Screenshot 8: Filtering HTTP Traffic](./screenshots/Lab9SS8.png)  
-![Screenshot 9: Searching with grep](./screenshots/Lab9SS9.png)  
+![Screenshot 8: Filtering HTTP Traffic](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS8.png)  
+![Screenshot 9: Searching with grep](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS9.png)  
 **Screenshots 8 & 9:** Narrowed analysis by filtering HTTP traffic and focusing on the suspected infected host.  
 Used `grep` to identify HTTP GET and POST requests, which often reveal data retrieval or credential submission.
 
 ---
 
-![Screenshot 10: Suspicious File Download](./screenshots/Lab9SS10.png)  
+![Screenshot 10: Suspicious File Download](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS10.png)  
 **Screenshot 10:** Identified a suspicious download path containing `.audiodg.exe`.  
 Executable files are high-risk, and the leading dot suggests an attempt to hide the file.
 
 ---
 
-![Screenshot 11: File Name Research](./screenshots/Lab9SS11.png)  
+![Screenshot 11: File Name Research](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS11.png)  
 **Screenshot 11:** Investigated the filename.  
 Although it resembles a legitimate Windows process, it was not downloaded from an official Microsoft source.
 
 ---
 
-![Screenshot 12: Investigating the IP Address](./screenshots/Lab9SS12.png)  
+![Screenshot 12: Investigating the IP Address](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS12.png)  
 **Screenshot 12:** WHOIS lookup revealed the IP belongs to a hosting provider in Vietnam and is not associated with Microsoft.  
 At this stage, two IOCs were identified: a suspicious filename and a suspicious IP.
 
 ---
 
-![Screenshot 13: Searching for Additional Indicators](./screenshots/Lab9SS13.png)  
+![Screenshot 13: Searching for Additional Indicators](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS13.png)  
 **Screenshot 13:** Used `grep` to find additional packets referencing `audiodg.exe`.  
 Discovered embedded URLs pointing back to the same malicious IP.
 
 ---
 
-![Screenshot 14: Viewing ASCII Payloads](./screenshots/Lab9SS14.png)  
+![Screenshot 14: Viewing ASCII Payloads](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS14.png)  
 **Screenshot 14:** Used the `-A` option to view packet payloads in ASCII format.  
 This allows limited inspection of packet contents using only command-line tools.
 
 ---
 
-![Screenshot 15: Bing API Traffic](./screenshots/Lab9SS15.png)  
-![Screenshot 16: WHOIS Verification](./screenshots/Lab9SS16.png)  
+![Screenshot 15: Bing API Traffic](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS15.png)  
+![Screenshot 16: WHOIS Verification](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS16.png)  
 **Screenshots 15 & 16:** Investigated traffic involving `api.bing.com`.  
 WHOIS confirmed Microsoft ownership, suggesting abuse of Bing’s API to redirect victims to malware.
 
