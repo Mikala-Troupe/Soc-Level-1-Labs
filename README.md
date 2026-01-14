@@ -15,7 +15,13 @@ This repository captures my weekly SOC Level 1 learning write-ups, steps, findin
 | **7** | Automated Email Analysis with PhishTool  | Streamline triage with automated analysis tools                  | [View](./Week-07_Automated-Email-Analysis-Phish-Tool/README.md)        |
 | **8** | Documentation & Reporting                | Capture findings and write SOC-ready incident reports            | [View](./Week-08_Documentation-and-Reporting/README.md)                |
 
+## 🗓️ Weekly Index — Part 2: Network Security Lab Notes
 
+| Week   | Topic                                   | Focus                                                           | Link                                                                 |
+| ------ | --------------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **9**  | tcpdump: Analyzing Network Traffic      | Analyze captured packets, protocols, and network activity       | [View](./Week-09_tcpdump-Analyzing-Network-Traffic/README.md)        |
+| **10** | Wireshark: Analyzing Network Traffic    | Analyze packets, conversations, and protocols using Wireshark   | [View](./Week-10_Wireshark-Analyzing-Network-Traffic/README.md)      |
+| **11** | Snort: Intrusion Detection & Prevention | Detect, alert, and block malicious activity using Snort IDS/IPS | [View](./Week-11_Snort-Intrusion-Detection-and-Prevention/README.md) |
 
 
 
