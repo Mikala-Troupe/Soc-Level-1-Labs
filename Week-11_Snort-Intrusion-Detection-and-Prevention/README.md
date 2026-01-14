@@ -90,32 +90,35 @@ Discovered embedded URLs pointing back to the same malicious IP.
 
 ---
 
-![Screenshot 14: Viewing ASCII Payloads](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS14.png)  
-**Screenshot 14:** Used the `-A` option to view packet payloads in ASCII format.  
-This allows limited inspection of packet contents using only command-line tools.
+![Screenshot 14: Bing API Packet Analysis](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/befff727f1e25d2aefafd3092a56ff49c8706928/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS14.png)  
+![Screenshot 15: WHOIS Lookup – Microsoft IP](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/befff727f1e25d2aefafd3092a56ff49c8706928/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS15.png)  
+**Screenshots 14 & 15:** Reviewed packets related to the suspicious API request `qsml.aspx?`.  
+Observed the HTTP header `Host: api.bing.com` and a destination IP address of `13.107.5.80`.  
+
+A WHOIS lookup was performed on the destination IP address, confirming it is owned by Microsoft and associated with Bing infrastructure.  
+Based on the unusual URL structure and behavior, it appears the attacker may be abusing Bing’s search API to redirect victims to a malicious URL hosting an executable file.
 
 ---
 
-![Screenshot 15: Bing API Traffic](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS15.png)  
-![Screenshot 16: WHOIS Verification](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/61cba10ba55a4acfa864c766bf2da08208547fdf/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS16.png)  
-**Screenshots 15 & 16:** Investigated traffic involving `api.bing.com`.  
-WHOIS confirmed Microsoft ownership, suggesting abuse of Bing’s API to redirect victims to malware.
+![Screenshot 16: CyberChef URL Decoding](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/befff727f1e25d2aefafd3092a56ff49c8706928/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS16.png)  
+**Screenshot 16:** Used **CyberChef** to decode and safely defang the suspicious URL.  
+Several indicators suggest malicious intent:
+- Direct IP address usage instead of a domain name  
+- Use of the unencrypted HTTP protocol  
+- Delivery of an executable file  
 
 ---
 
-![Screenshot 17: CyberChef Analysis](./screenshots/Lab9SS17.png)  
-**Screenshot 17:** Used CyberChef to safely decode and analyze the suspicious URL.  
-Indicators included HTTP usage, direct IP addressing, and executable delivery.
+![Screenshot 17: VirusTotal URL Analysis](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/befff727f1e25d2aefafd3092a56ff49c8706928/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS17.png)  
+**Screenshot 17:** Investigated the decoded URL using **VirusTotal**.  
+The URL was flagged as malicious by multiple security vendors, further supporting the findings from the traffic analysis.
 
 ---
 
-![Screenshot 18: VirusTotal Validation](./screenshots/Lab9SS18.png)  
-**Screenshot 18:** VirusTotal confirmed the URL as malicious based on multiple vendor detections.
+![Screenshot 18: Executable File Signature](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/befff727f1e25d2aefafd3092a56ff49c8706928/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS18.png)  
+**Screenshot 18:** Reviewed the second packet in tcpdump related to the file download.  
+Identified the string *“This program cannot be run in DOS mode”*, which is commonly found at the beginning of Windows executable files and confirms that the payload being transferred is a `.exe` file.
 
----
-
-![Screenshot 19: Executable File Signature](./screenshots/Lab9SS19.png)  
-**Screenshot 19:** Identified the string *“This program cannot be run in DOS mode”*, confirming the file is a Windows executable.
 
 ---
 
