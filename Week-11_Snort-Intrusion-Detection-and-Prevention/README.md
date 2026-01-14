@@ -1,4 +1,4 @@
-# Week 9 — tcpdump: Analyzing & Reporting 📡
+# Week 9 — tcpdump: Analyzing & Reporting 
 
 ## Overview
 This week focused on **network traffic analysis using tcpdump**, a command-line packet analysis tool commonly used by SOC analysts.  
@@ -19,27 +19,27 @@ Through filtering, timestamp analysis, string searching, and threat-intel valida
 
 ## 📌 tcpdump Analysis Walkthrough
 
-![Screenshot 1: Viewing a PCAP in tcpdump](./screenshots/Lab9SS1.png)  
+![Screenshot 1: Viewing a PCAP in tcpdump](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/eb3a44662eadcdc56a39584b68fe661c022e3e3a/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS1.png)  
 **Screenshot 1:** Opened a packet capture file using tcpdump.  
 Used the `-r` option to read an existing PCAP file instead of capturing live traffic.  
 Observed ICMP echo requests and replies, indicating basic network communication.
 
 ---
 
-![Screenshot 2: Counting Packets](./screenshots/Lab9SS2.png)  
+![Screenshot 2: Counting Packets](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/eb3a44662eadcdc56a39584b68fe661c022e3e3a/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS2.png)  
 **Screenshot 2:** Used the `--count` option to determine the total number of packets matching the current filter.  
 This provides a quick overview of capture size without printing all packet details.
 
 ---
 
-![Screenshot 3: Limiting Packet Output](./screenshots/Lab9SS3.png)  
+![Screenshot 3: Limiting Packet Output](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/eb3a44662eadcdc56a39584b68fe661c022e3e3a/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS3.png)  
 **Screenshot 3:** Applied the `-c <number>` option to limit the number of packets displayed.  
 Useful when working with large PCAPs and only needing a subset of packets.
 
 ---
 
-![Screenshot 4: Timestamp Options](./screenshots/Lab9SS4.png)  
-![Screenshot 5: Timestamp Options Continued](./screenshots/Lab9SS5.png)  
+![Screenshot 4: Timestamp Options](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/eb3a44662eadcdc56a39584b68fe661c022e3e3a/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS4.png)  
+![Screenshot 5: Timestamp Options Continued](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/eb3a44662eadcdc56a39584b68fe661c022e3e3a/Week-11_Snort-Intrusion-Detection-and-Prevention/Week-11_Snort-Intrusion-Detection-and-Prevention/screenshots/Lab10SS5.png)  
 ![Screenshot 6: Timestamp Formats](./screenshots/Lab9SS6.png)  
 **Screenshots 4–6:** Explored tcpdump timestamp display options.  
 - `-t`: Removes timestamps  
