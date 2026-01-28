@@ -21,7 +21,7 @@ This repository captures my weekly SOC Level 1 learning write-ups, steps, findin
 | ------ | --------------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------- |
 | **9**  | tcpdump: Analyzing Network Traffic      | Analyze captured packets, protocols, and network activity       | [View](./Week-09_tcpdump-Analyzing-Network-Traffic/README.md)        |
 | **10** | Wireshark: Analyzing Network Traffic    | Analyze packets, conversations, and protocols using Wireshark   | [View](./Week-10_Wireshark-Analyzing-Network-Traffic/README.md)      |
-| **11** | Snort: Intrusion Detection & Prevention | Detect, alert, and block malicious activity using Snort IDS/IPS | [View](./Week-11_Snort-Intrusion-Detection-and-Prevention/README.md) |
+| **11** | Snort: Intrusion Detection & Prevention | Detect, alert, and block malicious activity using Snort IDS/IPS | Coming Soon |
 
 
 
