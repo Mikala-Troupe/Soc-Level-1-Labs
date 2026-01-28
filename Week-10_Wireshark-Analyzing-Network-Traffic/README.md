@@ -1,4 +1,4 @@
-# Week 10 — Wireshark: Analyzing Network Traffic 🌐
+# Week 10: Wireshark: Analyzing Network Traffic 🌐
 
 ## Overview
 This week focused on **network traffic analysis using Wireshark**, building on previous tcpdump analysis skills.  
