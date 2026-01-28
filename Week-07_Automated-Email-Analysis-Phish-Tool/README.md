@@ -1,4 +1,4 @@
-# Week 7 — Automated Email Analysis with PhishTool 
+# Week 7: Automated Email Analysis with PhishTool 
 
 ## Overview
 This week focused on using **PhishTool**, a web-based phishing analysis platform that automatically parses, categorizes, and enriches suspicious emails.  
