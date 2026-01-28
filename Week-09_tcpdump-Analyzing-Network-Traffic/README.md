@@ -1,4 +1,4 @@
-# Week 9 — tcpdump: Analyzing & Reporting 
+# Week 9: tcpdump: Analyzing & Reporting 
 
 ## Overview
 This week focused on **network traffic analysis using tcpdump**, a command-line packet analysis tool commonly used by SOC analysts.  
