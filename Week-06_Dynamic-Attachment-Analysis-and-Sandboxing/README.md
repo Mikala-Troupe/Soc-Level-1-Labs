@@ -1,4 +1,4 @@
-# Week 6 — Dynamic Attachment Analysis & Sandboxing 
+# Week 6: Dynamic Attachment Analysis & Sandboxing 
 
 ## Overview
 This week focused on using **sandboxing** and **dynamic malware analysis platforms** to safely analyze suspicious email attachments. Unlike static analysis, dynamic analysis executes the file in a controlled environment to observe real behavior such as process activity, registry modifications, network connections, and dropped files.  
