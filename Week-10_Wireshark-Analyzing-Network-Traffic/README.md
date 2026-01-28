@@ -20,20 +20,20 @@ This lab followed a structured SOC workflow: starting with high-level traffic an
 
 ## 📌 Wireshark Analysis Walkthrough
 
-![Screenshot 1: Loading PCAP File](./screenshots/Lab11SS1.png)  
+![Screenshot 1: Loading PCAP File](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS1.png)  
 **Screenshot 1:** Loaded a public malware PCAP sample into **Wireshark**.  
 This PCAP was provided by *malwareanalysis.net* and contains traffic from a compromised Windows host.
 
 ---
 
-![Screenshot 2: Setting Timestamp Format](./screenshots/Lab11SS2.png)  
+![Screenshot 2: Setting Timestamp Format](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS2.png)  
 **Screenshot 2:** Configured timestamps for consistent documentation.  
 Path used: `View → Time Display Format → UTC Date and Time of Day`.  
 Using UTC ensures consistent correlation across logs, alerts, and reports.
 
 ---
 
-![Screenshot 3: Capture File Properties](./screenshots/Lab11SS3.png)  
+![Screenshot 3: Capture File Properties](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS3.png)  
 **Screenshot 3:** Reviewed **Capture File Properties** under the `Statistics` tab.  
 Key observations:
 - Over **50,000 packets** captured  
@@ -43,7 +43,7 @@ This high-level overview helps determine whether the PCAP is worth deeper invest
 
 ---
 
-![Screenshot 4: Conversations Analysis](./screenshots/Lab11SS4.png)  
+![Screenshot 4: Conversations Analysis](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS4.png)  
 **Screenshot 4:** Reviewed **IPv4 Conversations** to identify top talkers.  
 Findings:
 - `10.0.0.149` communicated heavily with `10.0.0.6`
@@ -57,7 +57,7 @@ This helps narrow down which endpoints to prioritize.
 
 ---
 
-![Screenshot 5: Protocol Hierarchy](./screenshots/Lab11SS5.png)  
+![Screenshot 5: Protocol Hierarchy](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS5.png)  
 **Screenshot 5:** Viewed **Protocol Hierarchy** to identify dominant protocols.  
 Observations:
 - Heavy NetBIOS, SMB, LDAP, and RPC traffic  
@@ -67,7 +67,7 @@ Low-volume HTTP traffic often deserves closer inspection since it can hide malwa
 
 ---
 
-![Screenshot 6: Inspecting HTTP Traffic](./screenshots/Lab11SS6.png)  
+![Screenshot 6: Inspecting HTTP Traffic](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS6.png)  
 **Screenshot 6:** Investigated the limited HTTP traffic.  
 Suspicious indicators:
 1. Host header used an **IP address**, not a domain  
@@ -77,7 +77,7 @@ Suspicious indicators:
 
 ---
 
-![Screenshot 7: Following HTTP Stream](./screenshots/Lab11SS7.png)  
+![Screenshot 7: Following HTTP Stream](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS7.png)  
 **Screenshot 7:** Followed the HTTP stream to reconstruct the conversation.  
 Observations:
 - User-Agent identified as `curl/7.83.1` (unusual for normal users)  
@@ -89,7 +89,7 @@ This confirms the victim downloaded a Windows executable using `curl`.
 
 ---
 
-![Screenshot 8: Exporting HTTP Objects](./screenshots/Lab11SS8.png)  
+![Screenshot 8: Exporting HTTP Objects](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS8.png)  
 **Screenshot 8:** Exported the file using `File → Export Objects → HTTP`.  
 Findings:
 - File identified as a **PE32 Windows executable (DLL)**  
@@ -97,19 +97,19 @@ Findings:
 
 ---
 
-![Screenshot 9: VirusTotal File Reputation](./screenshots/Lab11SS9.png)  
+![Screenshot 9: VirusTotal File Reputation](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS9.png)  
 **Screenshot 9:** Submitted the file hash to **VirusTotal**.  
 The file was flagged as malicious by multiple vendors.
 
 ---
 
-![Screenshot 10: MALWAREbazaar Lookup](./screenshots/Lab11SS10.png)  
+![Screenshot 10: MALWAREbazaar Lookup](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/LAb11SS10.png)  
 **Screenshot 10:** Checked the hash in **MALWAREbazaar**.  
 The file was associated with the **Quakbot** malware family.
 
 ---
 
-![Screenshot 11: Quakbot Research](./screenshots/Lab11SS11.png)  
+![Screenshot 11: Quakbot Research](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS11.png)  
 **Screenshot 11:** Researched **Quakbot** using MITRE ATT&CK and threat reports.  
 Key behaviors:
 - Performs **ARP scanning** to identify other hosts  
@@ -117,7 +117,7 @@ Key behaviors:
 
 ---
 
-![Screenshot 12: ARP Scan Detection](./screenshots/Lab11SS12.png)  
+![Screenshot 12: ARP Scan Detection](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS12.png)  
 **Screenshot 12:** Filtered ARP traffic using:  
 `arp and eth.dst eq ff:ff:ff:ff:ff:ff`  
 
@@ -128,7 +128,7 @@ Observations:
 
 ---
 
-![Screenshot 13: ICMP Traffic](./screenshots/Lab11SS13.png)  
+![Screenshot 13: ICMP Traffic](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS13.png)  
 **Screenshot 13:** Filtered ICMP traffic to confirm host discovery.  
 Findings:
 - ICMP echo requests and replies identified  
@@ -138,7 +138,7 @@ Findings:
 
 ---
 
-![Screenshot 14: Port Scan Activity](./screenshots/Lab11SS14.png)  
+![Screenshot 14: Port Scan Activity](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS14.png)  
 **Screenshot 14:** Investigated possible port scanning on `10.0.0.1`.  
 Findings:
 - Incomplete TCP handshakes  
@@ -148,13 +148,13 @@ This suggests a **stealthy SYN scan**, used to identify open ports while avoidin
 
 ---
 
-![Screenshot 15: SMTP Traffic Analysis](./screenshots/Lab11SS15.png)  
+![Screenshot 15: SMTP Traffic Analysis](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS15.png)  
 **Screenshot 15:** Analyzed SMTP traffic.  
 Observed `AUTH LOGIN` commands containing Base64-encoded credentials.
 
 ---
 
-![Screenshot 16: Credential Decoding](./screenshots/Lab11SS16.png)  
+![Screenshot 16: Credential Decoding](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS16.png)  
 **Screenshot 16:** Used **CyberChef** to decode Base64 data.  
 Recovered:
 - Username: `arthit@macnels.co.th`  
@@ -164,7 +164,7 @@ Authentication failed, but credentials may still be compromised.
 
 ---
 
-![Screenshot 17: SMB Object Transfers](./screenshots/Lab11SS17.png)  
+![Screenshot 17: SMB Object Transfers](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS17.png)  
 **Screenshot 17:** Exported SMB objects.  
 Findings:
 - Multiple `.dll` and `.dll.cfg` files  
@@ -174,7 +174,7 @@ Executable transfers over SMB are highly suspicious.
 
 ---
 
-![Screenshot 18: Hash Comparison](./screenshots/Lab11SS18.png)  
+![Screenshot 18: Hash Comparison](https://github.com/Mikala-Troupe/Soc-Level-1-Labs/blob/4519d1d2d555fcfb9a0b80db94462f6c8a8c4d73/Week-10_Wireshark-Analyzing-Network-Traffic/Week-10_Wireshark-Analyzing-Network-Traffic/screenshots/Lab11SS18.png)  
 **Screenshot 18:** Analyzed hashes of SMB-transferred files.  
 Results:
 - DLL files matched the **original Quakbot hash**
