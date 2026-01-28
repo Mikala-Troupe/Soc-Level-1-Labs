@@ -1,4 +1,4 @@
-# Week 8 — Documentation & Reporting 📝
+# Week 8: Documentation & Reporting 📝
 
 ## Overview
 This week focused on practicing **professional documentation and reporting**, an essential skill for SOC analysts.  
